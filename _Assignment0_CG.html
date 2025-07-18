@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triage</title>
+    <link rel="stylesheet" type="text/css" href="./_Assignment0_CG.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="icon" href="./_Assignment0_CG/triage2_removeBG.png" />
+    <!-- Font : JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Macondo&display=swap" rel="stylesheet">
+
+    <!-- Font : Noto Sans Thai -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row">
+
+<div class="main-top">
+        <div class="top-left">
+            <div class="question" id="Q1">1.หญิงคลอดเจ็บท้อง มีน้ำเดิน <br> BP120/60 HR100</div>
+            <div class="question" id="Q2">2.หญิงตั้งครรภ์ปวดศรีษะ ตาพร่ามัว <br> BP180/100 HR60</div>
+            <div class="question" id="Q3">3.ชาย 20 ปี หมดสติ ไม่รู้สึกตัว</div>
+            <div class="question" id="Q4">4.ชาย 60 ปี เจ็บหน้าอก เหงื่อแตก <br> ผุดลุกผุดนั่ง  BP100/60 HR50 RR22</div>
+            <div class="question" id="Q5">5.หญิง 50 ปี ปวดศรีษะ เวียนศรีษะ เดินเซ <br> BP190/100 HR80 RR20</div>
+            <div class="question" id="Q6">6.ชาย 30 ปี แน่นหน้าอกหายใจไม่สะดวก <br>   BP100/60 HR120 RR24 BT37</div>
+            <div class="question" id="Q7">7.หญิง 15 ปี ปวดท้อง Ps 9/10 หน้าซีด <br> BP100/60 HR110 RR22 BT37</div>
+            <div class="question" id="Q8">8.ชาย 16 ปี ถูกงูกัด แน่นหน้าอก มีผื่นคัน <br> หมดสติ BP80/50 HR60 RR24 BT37</div>
+            <div class="question" id="Q9">9.ชาย 60 ปี เวียนศรีษะ บ้านหมุน <br>BP150/90 RR24 BT36</div>
+            <div class="question" id="Q10">10.หญิง 36 ปี ไข้ ไอเจ็บคอ  <br>  BP100/60 HR110 RR22 BT37.8</div>
+
+            <div class="question" id="Q11">11.ชาย 36 ปี ต้องการใบรับรองแพทย์ลางาน</div>
+            <div class="question" id="Q12">12.ดช 5 เดือน ซึม ปากเขียว</div>
+            <div class="question" id="Q13">13.ดญ 2 เดือน ไข้ ซึม HR 220 <br> RR60 BT39</div>
+            <div class="question" id="Q14">14.ดช 3 ปี ไข้ ไอ หอบ RR 42 <br> BP90/60 BT39 SpO2 95%</div>
+            <div class="question" id="Q15">15.ชาย 40 ปี ถูกงูเขียวหางไหม้กัด มีเลือดออก <br> นำงูมาด้วย BP120/80 HR80 RR20 BT37</div>
+            <div class="question" id="Q16">16.ชาย 69 ปี แขนเเละขาด้านขวาอ่อนแรงมา3ชม.<br> ก่อนมารพ BP140/60 RR20 BT37</div>
+            <div class="question" id="Q17">17.หญิง 65 ปี ใจสั่นหายใจไม่สะดวก <br> BP100/60 HR160 RR22 BT37</div>
+            <div class="question" id="Q18">18.ชาย18ปี เอะอะโวยวาย <br> ทำร้ายร่างกายคนอื่น ตำรวจนำส่ง</div>
+            <div class="question" id="Q19">19.หญิง 16 ปี กินยาเกินขนาด ต้องการฆ่าตัวตาย <br> อาเจียน3ครั้ง BP100/60 HR120 RR22 BT37</div>
+            <div class="question" id="Q20">20.ชาย40ปี โดนมีดบาดมือซ้าย <br> BP120/80 HR100 RR20 </div>
+            <div class="question" id="Q21">Your score = </div>
+        </div>
+
+        <div class="top-right">
+            <div class="countdown-text">5</div>
+            <div id="scoreDisplay"></div>
+        </div>
+</div>
+
+<div class="main-bottom">
+    <button class="my-button-White" id = "whiteButton" type="botton">White</button>
+    <button class="my-button-Green" id = "greenButton" type="botton">Green</button>
+    <button class="my-button-Yellow" id = "yellowButton" type="botton">Yellow</button>
+    <button class="my-button-Orange" id = "orangeButton" type="botton">Orange</button>
+    <button class="my-button-Red" id = "redButton" type="botton">Red</button>
+    
+</div>
+
+    
+<button id="startMusic">Music</button>
+<audio id="bg-music" src="./_Assignment0_CG/mario.mp3" preload="auto"></audio>
+
+<script>
+    document.getElementById("startMusic").addEventListener("click", function () {
+        const music = document.getElementById("bg-music");
+        music.play();
+    });
+</script>
+
+
+    <script src="./_Assignment0_CG.js"></script>
+
+    
+</body>
+</html>
