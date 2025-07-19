@@ -1,131 +1,130 @@
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    margin: 20%;
-    background-image: url('./_Assignment0_CG/ER.jpg');
-        background-size: cover;
-        background-position: center;
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20%;
+  background-image: url("./_Assignment0_CG/ER.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.main-top{
-    width: 90%;
-    height: 35vh;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20pt;
-    display: grid;
-        grid-template-columns: 3fr 1fr;
-    column-gap: 5px;
+.main-top {
+  width: 90%;
+  height: 35vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20pt;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 5px;
 }
 .top-left {
-    grid-column: 1;
-    display: column;
-    justify-content: center;
+  grid-column: 1;
+  display: column;
+  justify-content: center;
 }
 
 .top-right {
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
 }
-.main-bottom{
-    display: grid;
-        grid-template-areas:
-                "header1 header2"
-                 "middle middle"
-                "footer1 footer2";
-    justify-items: center;
-    align-items: center;
-    row-gap: 0px;
-    column-gap: 50px;
-    width: 90%;
-    height: 55vh;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20pt;
+.main-bottom {
+  display: grid;
+  grid-template-areas:
+    "header1 header2"
+    "middle middle"
+    "footer1 footer2";
+  justify-items: center;
+  align-items: center;
+  row-gap: 0px;
+  column-gap: 50px;
+  width: 90%;
+  height: 55vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20pt;
 }
 /* ------------------------------------button----------------------------------------- */
-.my-button-White{
-    width: 400px;
-    height: 90px;
-    font-family: "JetBrains Mono", serif;
-    font-size: 24px;
-    border-radius: 10pt;
-    grid-area: header1;
-    background-color: whitesmoke;
+.my-button-White {
+  width: 400px;
+  height: 90px;
+  font-family: "JetBrains Mono", serif;
+  font-size: 24px;
+  border-radius: 10pt;
+  grid-area: header1;
+  background-color: whitesmoke;
 }
-.my-button-Green{
-    width: 400px;
-    height: 90px;
-    font-family: "JetBrains Mono", serif;
-    font-size: 24px;
-    border-radius: 10pt;
-    grid-area: header2;
-    background-color: #00B48E;
+.my-button-Green {
+  width: 400px;
+  height: 90px;
+  font-family: "JetBrains Mono", serif;
+  font-size: 24px;
+  border-radius: 10pt;
+  grid-area: header2;
+  background-color: #00b48e;
 }
-.my-button-Yellow{
-    width: 400px;
-    height: 90px;
-    font-family: "JetBrains Mono", serif;
-    font-size: 24px;
-    border-radius: 10pt;
-    grid-area: footer1;
-    background-color: #FFFF01;
+.my-button-Yellow {
+  width: 400px;
+  height: 90px;
+  font-family: "JetBrains Mono", serif;
+  font-size: 24px;
+  border-radius: 10pt;
+  grid-area: footer1;
+  background-color: #ffff01;
 }
-.my-button-Orange{
-    width: 400px;
-    height: 90px;
-    font-family: "JetBrains Mono", serif;
-    font-size: 24px;
-    border-radius: 10pt;
-    grid-area: footer2;
-    background-color: #F67629;
+.my-button-Orange {
+  width: 400px;
+  height: 90px;
+  font-family: "JetBrains Mono", serif;
+  font-size: 24px;
+  border-radius: 10pt;
+  grid-area: footer2;
+  background-color: #f67629;
 }
 .my-button-Red {
-    width: 400px;
-    height: 90px;
-    font-family: "JetBrains Mono", serif;
-    font-size: 24px;
-    border-radius: 10pt;
-    grid-area: middle;
-    background-color:#E6423D ;
+  width: 400px;
+  height: 90px;
+  font-family: "JetBrains Mono", serif;
+  font-size: 24px;
+  border-radius: 10pt;
+  grid-area: middle;
+  background-color: #e6423d;
 }
-.my-button-White:hover, 
-.my-button-Green:hover, 
-.my-button-Yellow:hover, 
-.my-button-Orange:hover, 
+.my-button-White:hover,
+.my-button-Green:hover,
+.my-button-Yellow:hover,
+.my-button-Orange:hover,
 .my-button-Red:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 /* ----------------------------------Time-------------------------------------------- */
-.countdown-text{
-    font-family: "JetBrains Mono", serif;
-    font-size: 180px;
-    margin-top: 30px;
-    margin-left: 90px;
-    color: #E6423D;
-    font-weight: bold;
+.countdown-text {
+  font-family: "JetBrains Mono", serif;
+  font-size: 180px;
+  margin-top: 30px;
+  margin-left: 90px;
+  color: #e6423d;
+  font-weight: bold;
 }
 .question {
-    font-family: 'Noto Sans Thai';
-    margin-left: 30px;
-    font-size: 50px;
-    margin-top: 50px;
+  font-family: "Noto Sans Thai";
+  margin-left: 30px;
+  font-size: 50px;
+  margin-top: 50px;
 }
-#Q21{
-    font-family: 'JetBrains Mono';
-    font-size: 140px;
-    margin-top: 50px;
-    color: blue;
-    font-weight: bold;
+#Q21 {
+  font-family: "JetBrains Mono";
+  font-size: 140px;
+  margin-top: 50px;
+  color: blue;
+  font-weight: bold;
 }
-#scoreDisplay{
-    font-family: 'Noto Sans Thai';
-    font-size: 180px;
-    margin-top: 30px;
-    color: rgb(255, 0, 255);
-    font-weight: bold;
+#scoreDisplay {
+  font-family: "Noto Sans Thai";
+  font-size: 180px;
+  margin-top: 30px;
+  color: rgb(255, 0, 255);
+  font-weight: bold;
 }
